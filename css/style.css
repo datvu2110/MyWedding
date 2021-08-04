@@ -227,6 +227,27 @@ header, section, footer {
     position: relative;
 }
 
+.couple-section .couple:nth-child(2):before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+.couple-section .couple i.fa-heart{
+    position: absolute;
+    left: -15px;
+    width: 31px;
+    background-color: #f3f2f1;
+    padding: 5px;
+    text-align: center;
+    top: 30%;
+    font-size: 18px;
+}
+
 .couple-section .couple img{
     max-width: 280px;
     width: 100%;
@@ -240,4 +261,34 @@ header, section, footer {
     font-family: 'Vibur', cursive;
     font-weight: normal;
     letter-spacing: 2px;
+}
+
+.couple-section .couple p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #555;
+    margin: 0;
+}
+
+.couple-section .social-links{
+    padding-top: 30px;
+}
+.couple-section .social-links a {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.couple-section .social-links a i {
+    height: 32px;
+    width: 32px;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.couple-section .social-links a:hover i {
+    color: #f3f2f1;
 }
