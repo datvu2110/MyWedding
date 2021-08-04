@@ -1,0 +1,11 @@
+.header .nav ul li a:hover {
+    color:#fb839e;
+}
+
+.header .nav ul li a:active, .couple-section .couple h3 {
+    color:#fb839e;
+}
+
+.couple-section .couple img {
+    border-color: #fb839e;
+}
