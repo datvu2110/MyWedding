@@ -216,7 +216,7 @@ header, section, footer {
 /* COUPLE SECTION */
 
 .couple-section{
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
 }
 
 .couple-section .couple{
@@ -291,4 +291,115 @@ header, section, footer {
 
 .couple-section .social-links a:hover i {
     color: #f3f2f1;
+}
+
+
+
+
+/* Story Section */
+
+.story-box{
+	padding: 70px 0px;
+}
+
+.align-left {
+    text-align: left;
+}
+.align-right {
+    text-align: right;
+}
+
+
+.main-timeline-box{
+	position: relative;
+	word-wrap: break-word;
+}
+
+.main-timeline-box .timeline-element {
+    margin-bottom: 50px;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+.main-timeline-box .reverse {
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
+.main-timeline-box .separline::before {
+    top: 20px;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+    left: calc(50% - 1px);
+    height: calc(100% + 4rem);
+    background-color: #ccc;
+}
+
+.main-timeline-box .iconBackground {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    display: inline-block;
+    top: 20px;
+    margin-left: -10px;
+}
+.main-timeline-box .timeline-text-content {
+   
+	background: #f1f1f1;
+}
+.main-timeline-box .reverse .timeline-text-content{
+	margin-right: 30px;
+}
+.main-timeline-box .reverse .time-line-date-content p {
+    float: left;
+	
+	background: #f1f1f1;
+}
+.main-timeline-box .reverse .time-line-date-content {
+	margin-right: 30px;
+}
+
+.display-font{
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+	color: #222222;
+}
+.main-timeline-box .timeline-text-content{
+	
+}
+.main-timeline-box .time-line-date-content p {
+    float: right;
+	padding: 10px 10px;
+	background: #f1f1f1;
+    border-radius: 10px;
+}
+.main-timeline-box .time-line-date-content {
+	margin-right: 30px;
+}
+
+.main-timeline-box .time-line-date-content .mbr-timeline-date{
+	background: #dd666c;
+	color: #ffffff;
+}
+.main-timeline-box .reverse .time-line-date-content .mbr-timeline-date{
+	background: #63c7bd;
+	color: #ffffff;
+}
+
+.story-content{
+    width: 40%;  
+}
+
+.story-content-right{
+    width: 40%;
+    float: right;
 }
