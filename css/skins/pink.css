@@ -1,3 +1,4 @@
+.event-section .event-item-inner span,
 .story-section .story-item i,
 .couple-section .social-links a i,
 .couple-section .couple i.fa-heart,
@@ -8,12 +9,13 @@
     color:#fb839e;
 }
 
+.event-section .event-item-inner::before,
 .couple-section .social-links a i,
 .couple-section .couple img {
     border-color: #fb839e;
 }
 
-
+.event-section,
 .main-timeline-box .iconBackground ,
 .couple-section .social-links a:hover i {
     background-color: #fb839e;
