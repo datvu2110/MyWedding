@@ -15,3 +15,14 @@ $(window).on("load", function(){
      }
      slideShow()
 })
+
+$(document).ready(function () {
+
+     $(".gallery").magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery:{
+              enabled:true
+          }
+      })
+});
