@@ -430,6 +430,10 @@ header, section, footer {
     color: #fff;
 }
 
+.event-section .section-title .border{
+    background: #fff;
+}
+
 .event-section .event-item{
     padding: 0 15px;
     display: flex;
