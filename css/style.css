@@ -79,11 +79,20 @@ header, section, footer {
     top: 0;
     z-index: 99;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease ;
+}
+
+.fixed{
+    position: fixed;
+    background-color: #F3F2F1;
+    box-shadow: 0 0 8px #cccccc;
 }
 
 .header .logo{
     padding: 0 15px;
 }
+
+
 
 .header .logo a {
     color: #fff;
@@ -91,6 +100,11 @@ header, section, footer {
     font-size: 2em;
     font-family: 'Vibur', cursive;
     letter-spacing: 2px;
+    transition: all 0.5s ease;
+}
+
+.header.fixed .logo a{
+    color:black;
 }
 
 .header .nav{
@@ -105,7 +119,7 @@ header, section, footer {
 }
 .header .nav ul li {
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 .header .nav ul li a {
     display: block;
@@ -116,6 +130,67 @@ header, section, footer {
     text-decoration: none;
     transition: color 0.5s ease;
 }
+
+.header.fixed .nav ul li a{
+    color: #555555;
+}
+
+
+.header .hamburger-btn {
+    display: inline-block;
+    height: 34px;
+    width: 40px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.header .hamburger-btn span{
+    display: block;
+    height: 1px;
+    width: 16px;
+    background-color: #fff;
+    position: relative;
+}
+
+.header.fixed .hamburger-btn {
+    border-color: #000;
+    background-color: #000;
+}
+.header.fixed .hamburger-btn span:after,
+.header.fixed .hamburger-btn span:before,
+.header.fixed .hamburger-btn span{
+    background-color: #000;
+}
+
+.header .hamburger-btn span:before,
+.header .hamburger-btn span:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+}
+
+.header .hamburger-btn span:before{
+    top: -6px;
+}
+
+.header .hamburger-btn span:after{
+    top: 6px;
+}
+
+
+
+
+
+
 
 /* HOME SECTION */
 .home-section{
@@ -558,8 +633,7 @@ header, section, footer {
 /* Our Family section */
 
 .family-section{
-    padding: 80px 0 130px;
-    margin-bottom: 50px;
+    padding: 80px 0 80px;
 }
 
 .family-section .container{
@@ -624,4 +698,76 @@ header, section, footer {
     .family-section .container{
         max-width: 100%;
     }
+}
+
+
+
+/* RSVP section */
+
+.rsvp-section{
+    padding: 80px 0 80px;
+}
+
+input[type="text"],select {
+    background-color : #E6ECEB; 
+    width: 100%;
+
+	height: 45px;
+	font-size: 16px;
+	border: 0;
+	color: #222222;
+	padding: 6px 15px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+textarea{
+    background-color : #E6ECEB; 
+    width: 100%;
+	font-size: 16px;
+	border: 0;
+	color: #222222;
+	padding: 6px 15px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.input-group{
+    padding-left: 10%;
+    padding-right: 10%;
+	padding-top: 15px;
+}
+
+.btn-1{
+    background-color: #63C7BD;
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: #DD666C;
+    transition: all 0.5s ease ;
+}
+
+.btn:focus{
+    outline: none;
 }

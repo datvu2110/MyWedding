@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
     
     <title>Our Wedding Page</title>
 </head>
@@ -22,22 +23,28 @@
                 <div class="logo">
                     <a href="index.html">Dat &#10086; Minh Hang</a>
                 </div>
+                <div class="hamburger-btn">
+                    <span></span>
+                </div>
                 <div class="nav">
                     <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Story</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Gallery</a></li>
+                        <li><a data-scroll-nav="0" href="#" class="active">Home</a></li>
+                        <li><a data-scroll-nav="1" href="#">Story</a></li>
+                        <li><a data-scroll-nav="2" href="#">Events</a></li>
+                        <li><a data-scroll-nav="3" href="#">Gallery</a></li>
+                        <li><a data-scroll-nav="4" href="#">Our Family</a></li>
+                        <li><a data-scroll-nav="5" href="#">RSVP</a></li>
                     </ul>
-
                 </div>
             </div>
                 
         </div>
     </header>
 
-    <section class="home-section">
+
+    
+
+    <section class="home-section" data-scroll-index="0"  >
         <div class="slide active" style="background-image: url('img/slides/slide1.jpeg');">
             <div class="container">
                 <div class="row align-items-center">
@@ -75,9 +82,14 @@
         </div>
     </section>
 
+
+
+
+
+
     <!-- Couple Section start-->
 
-    <section class="couple-section">
+    <section class="couple-section" data-scroll-index="1" >
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -131,7 +143,7 @@
 
     <!-- Story Section start-->
     
-    <section class="story-section">
+    <section class="story-section" data-scroll-index="1" >
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -212,7 +224,7 @@
 
     <!-- Event Section starts-->
 
-    <section class="event-section">
+    <section class="event-section" data-scroll-index="2">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="section-title">
@@ -257,7 +269,7 @@
     <!-- Event Section end-->
 
     <!-- Our Memories start-->
-    <section class="gallery-section">
+    <section class="gallery-section" data-scroll-index="3">
         <div class="inner-width section-title">
             <h2>Our Memories</h2>
             <div class="border">
@@ -300,10 +312,12 @@
 
     </section>
 
-
-
     <!-- Our Memories end-->
-    <section class="family-section">
+
+
+
+    <!-- Family start-->
+    <section class="family-section" data-scroll-index="4">
         <div class="container">
            
                 <div class="section-title">
@@ -375,14 +389,88 @@
 				</div>
         </div>
     </section>
-    <!-- Family start-->
-
     
-
     <!-- Family end-->
+
+
+    <!-- RSVP section start-->
+
+    <section class="rsvp-section" data-scroll-index="5" >
+        <class class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>You are invited</h2>
+                    <p>Please kindly response before 3 Dec 2021</p>
+                    <div class="border">
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="rsvp-form">
+                    <form action="" class="form">
+                        <div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+								<div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="input-group">
+                                <select class="input-control" id="guest" required data-error="Please select an item in the list.">
+                                    <option disabled selected>Number Of Guest*</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="input-group">
+                                <select class="input-control" id="event" required data-error="Please select an item in the list.">
+                                    <option disabled selected>I Am Attending*</option>
+                                    <option value="1">All events</option>
+                                    <option value="2">Wedding ceremony</option>
+                                    <option value="3">Reception party</option>
+                                </select>
+                                  
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="input-group">
+                                <textarea class="input-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+								<div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="input-group">
+                                <button type="submit" class="btn-1">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+
+        </class>
+    </section>
+
+    <!-- RSVP section end-->
 
     <!-- JQuery-->
     <script src="js/main.js"></script>
+    <script src="js/scrollIt.min.js"></script>
     <script src="https://kit.fontawesome.com/98fa01b630.js" crossorigin="anonymous"></script>
 
 </body>
