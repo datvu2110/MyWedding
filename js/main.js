@@ -47,3 +47,8 @@ $(document).ready(function(){
 })
 
 
+const hamburger = document.querySelector('.hamburger-btn')
+const nav = document.querySelector('.nav')
+hamburger.addEventListener("click",() => {
+     nav.classList.toggle("open")
+})

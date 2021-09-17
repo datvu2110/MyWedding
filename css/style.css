@@ -48,6 +48,7 @@ header, section, footer {
 
 .justify-content-between{
     justify-content: space-between;
+    height: 10vh;
 }
 
 .align-items-center{
@@ -119,11 +120,11 @@ header, section, footer {
 }
 .header .nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 .header .nav ul li a {
     display: block;
-    padding:25px;
+    padding:15px;
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
@@ -160,7 +161,7 @@ header, section, footer {
 
 .header.fixed .hamburger-btn {
     border-color: #000;
-    background-color: #000;
+    background-color: white;
 }
 .header.fixed .hamburger-btn span:after,
 .header.fixed .hamburger-btn span:before,
@@ -668,37 +669,6 @@ header, section, footer {
 
 
 
-@media screen and (max-width: 960px) {
-    .gallery-section .image{
-        flex: 33.33%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .gallery-section .image{
-        flex: 50%;
-    }
-    .single-member{
-        width: 49%;
-    }
-    .family-info h4, .family-info p{
-        font-size: 12px;
-        line-height: 2;
-    }
-    .family-section .container{
-        max-width: 90%;
-    }
-    
-}
-
-@media screen and (max-width: 480) {
-    .gallery-section .image{
-        flex: 100%;
-    }
-    .family-section .container{
-        max-width: 100%;
-    }
-}
 
 
 
@@ -770,4 +740,79 @@ textarea{
 
 .btn:focus{
     outline: none;
+}
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 960px) {
+    .gallery-section .image{
+        flex: 33.33%;
+    }
+    .header .logo{
+        padding: 8px 15px;
+    }
+
+    .header .hamburger-btn{
+        display: flex;
+        margin-right: 15px;
+    }
+
+    .header .nav{
+        flex: 0 0 100%;
+        max-width: 100%;
+        background-color:pink;
+        clip-path: circle(100px at 90% -40%);
+        -webkit-clip-path: circle(100px at 90% -40%);
+        transition: all 1s ease-out;
+    }
+
+    .header .nav.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+    }
+
+
+
+    .header .nav ul li{
+        display: block;
+        margin-left: 0;
+    }
+
+    .header .nav ul li a{
+        color: #555;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-section .image{
+        flex: 50%;
+    }
+    .single-member{
+        width: 49%;
+    }
+    .family-info h4, .family-info p{
+        font-size: 12px;
+        line-height: 2;
+    }
+    .family-section .container{
+        max-width: 90%;
+    }
+
+    
+
+    
+
+}
+
+@media screen and (max-width: 480) {
+    .gallery-section .image{
+        flex: 100%;
+    }
+    .family-section .container{
+        max-width: 100%;
+    }
 }
