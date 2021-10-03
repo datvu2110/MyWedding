@@ -30,12 +30,12 @@ $(document).ready(function () {
 $(window).on('load', function() { 
      $('.preloader').fadeOut(); 
      $('#preloader').delay(550).fadeOut('slow'); 
-     $('body').delay(450).css({'overflow':'visible'});
+     $('body').delay(650).css({'overflow':'visible'});
 });
 
 $(document).ready(function(){
      $(window).scroll (function(){
-          if ($(this).scrollTop() > 100){
+          if ($(this).scrollTop() > 30){
                $(".header").addClass("fixed")
           }
           else{
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
      
      $.scrollIt({
-          topOffset:-80
+          topOffset:-90
      });
       
 })
